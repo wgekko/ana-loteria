@@ -16,12 +16,15 @@ checkBtn.addEventListener("click", function() {
   let aciertos1 = [];   
   let contador = 0;
   let contador1 = 0; 
-  dato.push(parseInt(document.getElementById("user-number-1").value));
-  dato.push(parseInt(document.getElementById("user-number-2").value));
-  dato.push(parseInt(document.getElementById("user-number-3").value));
-  dato.push(parseInt(document.getElementById("user-number-4").value));
-  dato.push(parseInt(document.getElementById("user-number-5").value));
-  dato.push(parseInt(document.getElementById("user-number-6").value));  
+  
+  while()
+      dato.push(parseInt(document.getElementById("user-number-1").value));
+      dato.push(parseInt(document.getElementById("user-number-2").value));
+      dato.push(parseInt(document.getElementById("user-number-3").value));
+      dato.push(parseInt(document.getElementById("user-number-4").value));
+      dato.push(parseInt(document.getElementById("user-number-5").value));
+      dato.push(parseInt(document.getElementById("user-number-6").value));  
+
 
   for (let i = 0; i < dato.length; i++) {
     if (brincoUno.includes(dato[i]) || brincoDos.includes(dato[i]))  { 
