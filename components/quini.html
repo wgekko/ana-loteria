@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +7,42 @@
     <link rel="icon" href="/img/favicon-32x32.png">
     <title>Ana-Quini6</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">-->
   </head>
   <body>
     <header id="header">
-      <a href="" target="_blank"><img src="/img/android-chrome-225x225.png" class="logo" alt="logo__Ana" id="header_logo"></a>
-      <h1>Ana - Brinco/Quini6 TechSystem - </h1>
+      <a><img src="/img/android-chrome-225x225.png" class="logo" alt="logo__Ana" id="header_logo"></a>
+      <h1>Ana - Brinco/Quini6 - </h1>
       <br><br>
       <div class="botones">
-        <button class="nuevo-sorteo" onclick="window.location.href = '/components/quini.html';">nuevo sorteo</button>      
-        <button class="menu" onclick="window.location.href = '/index.html';">Volver al Menu</button>
-        <button type="button" class="salida" onclick="window.location.href = '/salir.html';">Salir</button>
+        <button class="nuevo_sorteo_quini" onclick="window.location.href = '/components/quini.html';">nuevo sorteo</button><!--onclick="window.location.href = '/components/quini.html';"-->      
+        <button type="button" class="" onclick="window.location.href = '/index.html';" >Volver al Menu</button>
+        <button type="button" class="" onclick="window.location.href = '/salir.html';">Salir</button>
       </div>
   </header>
   <main >
           <h1>Quini6</h1>
           <p>Ana, digita los números del sorteo del Quini6 :</p>
           <form>
-            <input type="text" id="user-number-1" size="2" required="" minlenght="2" maxlength="2" pattern="[0-9]+" >
-            <input type="text" id="user-number-2" size="2" required="" minlenght="2" maxlength="2" pattern="[0-9]+">
-            <input type="text" id="user-number-3" size="2" required="" minlenght="2" maxlength="2" pattern="[0-9]+" >
-            <input type="text" id="user-number-4" size="2" required="" minlenght="2" maxlength="2" pattern="[0-9]+">
-            <input type="text" id="user-number-5" size="2" required="" minlenght="2" maxlength="2" pattern="[0-9]+">
-            <input type="text" id="user-number-6" size="2" required="" minlenght="2" maxlength="2" pattern="[0-9]+">
+            <input type="text" id="user-number-1"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="" >
+            <input type="text" id="user-number-2"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
+            <input type="text" id="user-number-3"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="" >
+            <input type="text" id="user-number-4"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
+            <input type="text" id="user-number-5"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
+            <input type="text" id="user-number-6"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
             <button id="check-btn-quini">Verificar aciertos</button>
           </form>  
           <p id="cartonUno"></p>    
           <p id="result"></p>             
-          <div id="numeros"></div>    
+          <p id="numeros"></p>    
 
           <p id="cartonDos"></p>
           <p id="resul"></p>                  
-          <div id="numero"></div>  
+          <p id="numero"></p>  
 
           <p id="cartonTres"></p>  
           <p id="res"></p>               
-          <div id="num"></div>   
+          <p id="num"></p>   
   </main>
   <footer id="pie-pagina">
     <div class="redes">
@@ -54,5 +54,6 @@
      </div>
   </footer> 
   <script src="/js/quini.js"></script>
+  <script src="/js/javascript.js"></script>
   </body>
 </html>

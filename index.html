@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,20 +11,19 @@
   </head>
   <body>
     <header id="header">
-      <a href="" target="_blank"><img src="/img/android-chrome-225x225.png" class="logo" alt="logo__Ana" id="header_logo"></a>
-      <h1>Ana - Brinco/Quini6 TechSystem - </h1>
+      <a  class="menu" ><img src="/img/android-chrome-225x225.png" class="logo" alt="logo__Ana" id="header_logo"></a>
+      <h1>Ana - Brinco/Quini6 - </h1>
       <br><br>
       <div class="botones">      
-          <button type="button" class="menu" onclick="window.location.href = '/index.html';">Volver al Menu</button>
-        <button type="button" class="salida" onclick="window.location.href = '/salir.html';">Salir</button>
-              
-    </div>
+          <button type="button" class="menu" >Volver al Menu</button>
+        <button type="button" class="salida">Salir</button>    
+      </div>
   </header>
   <main>
       <div class="container">
         <div class="botones">
-          <button  type="button"  class="brinco" onclick="window.location.href = '/components/brinco.html';">Ir a Sorteo de Brinco </button>               
-          <button type="button"  class="quini" onclick="window.location.href = '/components/quini.html';">Ir a Sorteo de Quini6</button>         
+          <button  type="button"  class="brinco" onclick="window.location.href = '/components/brinco.html';" >Ir a Sorteo de Brinco </button> <!--onclick="window.location.href = '/components/brinco.html';"-->               
+          <button type="button"  class="quini"  onclick="window.location.href = '/components/quini.html';">Ir a Sorteo de Quini6</button> <!--onclick="window.location.href = '/components/quini.html';"-->        
         </div>       
       </div>
       <canvas id="micanvas" width="800" height="350"></canvas>     
@@ -36,11 +35,12 @@
       <a href="https://ar.linkedin.com/" target="_blank"><img class="imgRedes" src="img/Linkedin.png" alt="Linkedin"></a>
       <a href="mailto:waltergomez75@gmail.com" target="_blank"><img class="imgRedes" src="img/gmail.png" alt="Gmail"></a>
      </div>
-
   </footer>
-  <script src="/js/brinco.js"></script>
-  <script src="/js/quini.js"></script>
   <script src="/js/canvas.js"></script>
-  
+  <script src="/js/javascript.js"></script>
+  <!--
+  <script src="/js/brinco.js"></script> 
+  <script src="/js/quini.js"></script>
+  -->
   </body>
 </html>
