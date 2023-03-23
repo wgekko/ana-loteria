@@ -11,11 +11,12 @@
   </head>
   <body>
     <header id="header">
-      <a ><img src="/img/android-chrome-225x225.png" class="logo" alt="logo__Ana" id="header_logo"></a>
+      <a  class="menu" href="/index.html" ><img src="/img/android-chrome-225x225.png" class="logo" alt="logo__Ana" id="header_logo"></a>
       <h1>Ana - Brinco/Quini6  - </h1>
       <br><br>
       <div class="botones">
-        <button class="nuevo_sorteo_brinco" onclick="window.location.href = '/components/brinco.html';" >nuevo sorteo</button> <!--onclick="window.location.href = '/components/brinco.html';"-->      
+        <button class="nuevo_sorteo_brinco" onclick="window.location.href = '/components/brinco.html';" >nuevo sorteo</button>
+         <!--onclick="window.location.href = '/components/brinco.html';"-->      
         <button type="button" class="" onclick="window.location.href = '/index.html';">Volver al Menu</button>
         <button type="button" class="" onclick="window.location.href = '/salir.html';">Salir</button>  
        </div>
@@ -32,13 +33,16 @@
             <input type="text" id="user-number-6" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
             <button id="check-btn-brinco">Verificar aciertos</button>
           </form>
-          <p id="cartonUno"></p> 
-          <p id="result" ></p>                
-          <p id="numeros"></p> 
+          <div>
+              <p id="cartonUno"></p> 
+              <p id="resultado" ></p>                
+              <p id="numeros" ></p>        
           
-          <p id="cartonDos" ></p>  
-          <p id="resul" ></p>               
-          <p id="numero" ></p>              
+              <p id="cartonDos" ></p>  
+              <p id="result" ></p>               
+              <p id="numero" ></p>
+          </div>
+                   
   </main>
   <footer id="pie-pagina">
     <div class="redes">

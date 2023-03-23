@@ -14,10 +14,10 @@ const carton1 = document.getElementById("cartonUno");
 const carton2 = document.getElementById("cartonDos");
 const carton3 = document.getElementById("cartonTres");
 
-checkBtn.addEventListener("click", function() {
+checkBtn.addEventListener("omclick", function() {
   let dato = [];
-  let dato1 = [];
-  let dato2 = [];
+  //let dato1 = [];
+  //let dato2 = [];
   let aciertos = [];
   let aciertos1 = [];
   let aciertos2 = [];
@@ -39,7 +39,7 @@ checkBtn.addEventListener("click", function() {
           aciertos.push(dato[i]); 
         } 
     }
-    /*
+    
     if (quiniDos.includes(dato[i]))  {  
         contador1++;    
         if (quiniDos[0] === dato[i] || quiniDos[1] === dato[i] || quiniDos[2] === dato[i] || quiniDos[3] === dato[i] || quiniDos[4] === dato[i] || quiniDos[5] === dato[i]){
@@ -52,50 +52,53 @@ checkBtn.addEventListener("click", function() {
        aciertos2.push(dato[i]);
       }   
     }
-    */
+    
   };
  
-  if (contador != 0) {
+  if (contador > 0) {
     carton1.innerHTML ="Carton Nro 1  :   " + quiniUno;
     resultado.innerHTML = "Felicidades! Ana tienes   "+ aciertos.length +" aciertos.";
     numeros.innerHTML = "números acertados:   "+ aciertos;
   }else{
-    carton1.innerHTML ="Carton Nro 1  :   " + quinisUno;
+    carton1.innerHTML ="Carton Nro 1  :   " + quiniUno;
     resultado.innerHTML = "Lo siento Ana no tienes aciertos.";
   };
   
-  for (let j = 0; j < dato1.length; j++) {
-    if (quiniDos.includes(dato1[i]))  {  
+  /*
+  for (let j = 0; j < dato.length; j++) {
+    if (quiniDos.includes(dato[i]))  {  
        contador2++;    
-       if (quiniDos[0] === dato1[i] || quiniDos[1] === dato1[i] || quiniDos[2] === dato1[i] || quiniDos[3] === dato1[i] || quiniDos[4] === dato1[i] || quiniDos[5] === dato1[i]){
-          aciertos1.push(dato1[i]);
+       if (quiniDos[0] === dato[i] || quiniDos[1] === dato[i] || quiniDos[2] === dato[i] || quiniDos[3] === dato[i] || quiniDos[4] === dato[i] || quiniDos[5] === dato[i]){
+          aciertos1.push(dato[i]);
         }   
     }
   };
- 
-  if (contador1 != 0) {
-    carton2.innerHTML = "Carton Nro 2  :   " +quiniDos;
-    result.innerHTML = "Felicidades! Ana tienes  "+ aciertos1.length +" aciertos.";
-    numero.innerHTML = "números acertados:   "+ aciertos1;
+ */
+  if (contador1 > 0) {
+    carton2.innerHTML = "Carton Nro 2  :   " + quiniDos;
+    result.innerHTML = "Felicidades! Ana tienes  " + aciertos1.length +" aciertos.";
+    numero.innerHTML = "números acertados:   " + aciertos1;
   }else{
     carton2.innerHTML ="Carton Nro 2  :   " + quiniDos;
     result.innerHTML = "Lo siento Ana no tienes aciertos.";
     
   };  
   
-  for (let k = 0; k < dato2.length; k++) {
-     if (quiniTres.includes(dato2[i]))  {  
+  /*
+  for (let k = 0; k < dato.length; k++) {
+     if (quiniTres.includes(dato[i]))  {  
        contador2++;    
-       if (quiniTres[0] === dato2[i] || quiniTres[1] === dato2[i] || quiniTres[2] === dato2[i] || quiniTres[3] === userdato2[i] || quiniTres[4] === dato2[i] || quiniTres[5] === dato2[i]){
-          aciertos1.push(dato2[i]);
+       if (quiniTres[0] === dato[i] || quiniTres[1] === dato[i] || quiniTres[2] === dato[i] || quiniTres[3] === dato[i] || quiniTres[4] === dato[i] || quiniTres[5] === dato[i]){
+          aciertos1.push(dato[i]);
         }   
     }
   };
    
-  if (contador2 != 0) {
+  */
+  if (contador2 > 0) {
     carton3.innerHTML = "Carton Nro 3  :   " + quiniTres;
-    resul.innerHTML = "Felicidades! Ana tienes    "+ aciertos2.length +" aciertos.";
-    nume.innerHTML = "números acertados:    "+ aciertos2;
+    resul.innerHTML = "Felicidades! Ana tienes    " + aciertos2.length + " aciertos.";
+    nume.innerHTML = "números acertados:    " + aciertos2;
   }else{
     carton3.innerHTML ="Carton Nro 3  :   " + quiniTres;
     resul.innerHTML = "Lo siento Ana no tienes aciertos.";    
@@ -103,6 +106,7 @@ checkBtn.addEventListener("click", function() {
   
 
 });
+
 /*
 
 const quiniUno = [3, 9, 25, 29, 30, 45];

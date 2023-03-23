@@ -11,7 +11,8 @@ body {
     text-align: center;
     background-color:beige;
     
-  }
+}
+
 canvas {
     margin: 0;
     border: 2px solid rgb(43, 41, 39);
@@ -36,9 +37,21 @@ p{
 #numero{
   font-size: 22px;
 }
-  #num{
+#num{
     font-size: 22px;
-  }
+}
+
+a {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor:pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 button {
     font-size: 18px;
