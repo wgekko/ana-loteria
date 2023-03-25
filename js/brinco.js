@@ -14,7 +14,7 @@ checkBtnBrinco.addEventListener("click", function (e) {
   let dato = [];   //let dato1 = [];
   let aciertos = [];
   let aciertos1 = [];
-  //let contador = 0;   //let contador1 = 0;
+  //let contador = 0; //let contador1 = 0;
 
   dato.push(parseInt(document.getElementById("user-number-1").value));
   dato.push(parseInt(document.getElementById("user-number-2").value));
@@ -53,12 +53,12 @@ checkBtnBrinco.addEventListener("click", function (e) {
   }
 
   if (aciertos.length != 0) {
-    carton1.innerHTML = `Carton Nro 1 : ${brincoUno} `; 
-    resultado.innerHTML = `Felicidades! Ana tienes : ${aciertos.length} `; 
+    carton1.innerHTML = `Carton N#1: [${brincoUno}], tiene: ${aciertos.length} acierto/s.`; 
+    //resultado.innerHTML = `Felicidades! Ana tienes : ${aciertos.length} `; 
     numero.innerHTML = `números acertados: ${aciertos}`; 
   } else {
-    carton1.innerHTML = `Carton Nro 1 : ${brincoUno}`; 
-    resultado.innerHTML = `Lo siento Ana no tienes aciertos.`; 
+    carton1.innerHTML = `Carton N#1: [${brincoUno}], NO tiene aciertos`; 
+    //resultado.innerHTML = `Lo siento Ana no tienes aciertos.`; 
   }
 
   /*
@@ -72,11 +72,29 @@ checkBtnBrinco.addEventListener("click", function (e) {
   };
   */
   if (aciertos1.length != 0) {
-    carton2.innerHTML = `Carton Nro 2 : ${brincoDos}`;
-    resultado1.innerHTML = `Felicidades! Ana tienes ${aciertos1.length} aciertos.`;
+    carton2.innerHTML = `Carton N#2: [${brincoDos}], tiene: ${aciertos1.length} acierto/s.`;
+    //resultado1.innerHTML = `Felicidades! Ana tienes ${aciertos1.length} aciertos.`;
     numero1.innerHTML = `números acertados: ${aciertos1}`;
   } else {
-    carton2.innerHTML = `Carton Nro 2  : ${brincoDos}`;
-    resultado1.innerHTML = `Lo siento Ana no tienes aciertos.`;
+    carton2.innerHTML = `Carton N#2: [${brincoDos}], NO tiene aciertos`;
+    //resultado1.innerHTML = `Lo siento Ana no tienes aciertos.`;
   }
 });
+
+function validarRangoBrinco(elemento){
+  var numero = parseInt(elemento.value,10);
+  //Validamos que se haya ingresado solo numeros y no cadenas de caracteres
+  if(isNaN(numero) || (!Number.isInteger(numero) || (numero === null))){
+    alert('Verifique datos, debe Ingresar solo números.');
+    elemento.focus();
+    elemento.select();
+    return false;
+  }
+  //Validamos que se cumpla el rango entre 00 y 39
+  if(numero<00 || numero>39){
+    alert('Recuerde, sólo se permite el números entre : 00 - 39');
+    elemento.focus();
+    return false;
+  }
+  return true;
+};

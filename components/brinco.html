@@ -25,29 +25,26 @@
           <h1>Brinco</h1>
           <p>Ana, digita los números del sorteo del Brinco :</p>
           <form>
-            <input type="text" id="user-number-1" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="" >
-            <input type="text" id="user-number-2" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-3" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-4" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-5" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-6" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
+            <input type="text" id="user-number-1" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required="" > <!--class="validar"-->
+            <input type="text" id="user-number-2" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
+            <input type="text" id="user-number-3" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
+            <input type="text" id="user-number-4" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
+            <input type="text" id="user-number-5" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
+            <input type="text" id="user-number-6" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
             <button  class="btn-modal-datos" id="check-btn-brinco">Verificar aciertos</button>
           </form>
           <section class="modal">
                 <div class="modal__container"> 
-
+                  <h4 class="modal__title">Verificación de aciertos</h4>
                     <p id="cartonUno"></p> 
-                    <p id="resultado" ></p>                
-                    <p id="numero" ></p>        
-                
+                    <!--<p id="resultado" ></p>-->                
+                    <p id="numero" ></p> 
                     <p id="cartonDos" ></p>  
-                    <p id="resultado1" ></p>               
+                    <!--<p id="resultado1" ></p>-->               
                     <p id="numero1" ></p>
-
                     <a href="#" class="modal__close">Cerrar ventana</a>
                 </div>
-        </section>
-                   
+        </section>                   
   </main>
   <script src="/js/brinco.js"></script>
   <script src="/js/javascript.js"></script>

@@ -71,12 +71,12 @@ checkBtnQuini.addEventListener("click", function (e) {
   }
 
   if (aciertos.length != 0) {
-    carton1.innerHTML = `Carton Nro 1 : ${quiniUno} `; 
-    resultado.innerHTML = `Felicidades! Ana tienes ${aciertos.length} aciertos.`; 
+    carton1.innerHTML = `Carton N#1: [${quiniUno}], tiene: ${aciertos.length} aciertos.`; 
+    //resultado.innerHTML = `Felicidades! Ana tienes ${aciertos.length} aciertos.`; 
     numero.innerHTML = `números acertados: ${aciertos}`; 
   } else {
-    carton1.innerHTML = `Carton Nro 1 : ${quiniUno}`; 
-    resultado.innerHTML = `Lo siento Ana no tienes aciertos.`; 
+    carton1.innerHTML = `Carton N#1: [${quiniUno}], NO tiene aciertos`; 
+    //resultado.innerHTML = `Lo siento Ana no tienes aciertos.`; 
   }
 
   /*
@@ -91,12 +91,12 @@ checkBtnQuini.addEventListener("click", function (e) {
  */
 
   if (aciertos1.length != 0) {
-    carton2.innerHTML = ` Carton Nro 2 : ${quiniDos}`; 
-    resultado1.innerHTML = `Felicidades! Ana tienes ${aciertos1.length} aciertos.`; 
-    numero1.innerHTML = ` números acertados: ${aciertos1}`; 
+    carton2.innerHTML = ` Carton N#2: [${quiniDos}], tiene: ${aciertos1.length} aciertos.`; 
+    //resultado1.innerHTML = `Felicidades! Ana tienes ${aciertos1.length} aciertos.`; 
+    numero1.innerHTML = `números acertados: ${aciertos1}`; 
   } else {
-    carton2.innerHTML = `Carton Nro 2 : ${quiniDos}`;
-    resultado1.innerHTML = `Lo siento Ana no tienes aciertos.`;
+    carton2.innerHTML = `Carton N#2: [${quiniDos}], NO tiene aciertos`;
+    //resultado1.innerHTML = `Lo siento Ana no tienes aciertos.`;
   }
 
   /*
@@ -111,14 +111,33 @@ checkBtnQuini.addEventListener("click", function (e) {
   */
 
   if (aciertos2.length != 0) {
-    carton3.innerHTML = `Carton Nro 3 : ${quiniTres}`; 
-    resultado2.innerHTML = `Felicidades! Ana tienes  ${aciertos2.length} aciertos.`; 
+    carton3.innerHTML = `Carton N#3: [${quiniTres}], tiene: ${aciertos2.length} aciertos `; 
+    //resultado2.innerHTML = `Felicidades! Ana tienes  ${aciertos2.length} aciertos.`; 
     numero2.innerHTML = `números acertados: ${aciertos2}`; 
   } else {
-    carton3.innerHTML = `Carton Nro 3 : ${quiniTres}`; 
-    resultado2.innerHTML = `Lo siento Ana no tienes aciertos.`;
+    carton3.innerHTML = `Carton N#3: [${quiniTres}], NO tiene aciertos `; 
+    //resultado2.innerHTML = `Lo siento Ana no tienes aciertos.`;
   }
 });
+
+function validarRangoQuini(elemento){
+  var numero = parseInt(elemento.value,10);
+  //Validamos que se haya ingresado solo numeros y no cadenas de caracteres
+  if(isNaN(numero) || (!Number.isInteger(numero)) || (numero == null) ){
+    alert('Verifique datos, debe Ingresar solo números.');
+    elemento.focus();
+    elemento.select();
+    return false;
+  }
+  //Validamos que se cumpla el rango entre 00 y 45
+  if(numero<00 || numero>45){
+    alert('Recuerde, sólo se permite el números entre : 00 - 45');
+    elemento.focus();
+    return false;
+  }
+  return true;
+};
+
 
 /*
 

@@ -25,28 +25,26 @@
           <h1>Quini6</h1>
           <p>Ana, digita los números del sorteo del Quini6 :</p>
           <form>
-            <input type="text" id="user-number-1"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="" >
-            <input type="text" id="user-number-2"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-3"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="" >
-            <input type="text" id="user-number-4"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-5"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
-            <input type="text" id="user-number-6"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" required="">
+            <input class="validar" type="text" id="user-number-1"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="" >
+            <input class="validar" type="text" id="user-number-2"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
+            <input class="validar" type="text" id="user-number-3"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="" >
+            <input class="validar" type="text" id="user-number-4"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
+            <input class="validar" type="text" id="user-number-5"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
+            <input class="validar" type="text" id="user-number-6"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
             <button  class="btn-modal-datos" id="check-btn-quini">Verificar aciertos</button>
           </form>  
           <section class="modal">
-            <div class="modal__container">                
+            <div class="modal__container">  
+                <h4 class="modal__title">Verificación de aciertos</h4>              
                     <p id="cartonUno"></p>    
-                    <p id="resultado"></p>             
+                    <!--<p id="resultado"></p> -->             
                     <p id="numero"></p>    
-
                     <p id="cartonDos"></p>
-                    <p id="resultado1"></p>                  
+                    <!--<p id="resultado1"></p>-->                  
                     <p id="numero1"></p>  
-
                     <p id="cartonTres"></p>  
-                    <p id="resultado2"></p>               
+                    <!--<p id="resultado2"></p>-->               
                     <p id="numero2"></p> 
-
                     <a href="#" class="modal__close">Cerrar ventana</a>
                   </div>
           </section>  
