@@ -85,8 +85,8 @@ checkBtnBrinco.addEventListener("click", function (e) {
 
 
 function validarNroBrinco(element) {
-  if (isNaN(element.value) || !element.value || element.value.trim()=="" || element.value < 1 || element.value > 39) {
-    alert("Por favor, ingrese un número válido entre 1 y 39.");
+  if (isNaN(element.value) || !element.value || element.value.trim()==" " || element.value < 0 || element.value > 39) {
+    alert("Por favor, ingrese un número válido entre 0 y 39.");
     element.value = "";
     element.focus();
     return;

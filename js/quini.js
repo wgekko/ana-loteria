@@ -123,8 +123,8 @@ checkBtnQuini.addEventListener("click", function (e) {
 });
 
 function validarNroQuini(element) {
-  if (isNaN(element.value) || !element.value || element.value.trim()=="" || element.value < 1 || element.value > 45) {
-    alert("Por favor, ingrese un número válido entre 1 y 45.");
+  if (isNaN(element.value) || !element.value || element.value.trim()==" " || element.value < 0 || element.value > 45) {
+    alert("Por favor, ingrese un número válido entre 0 y 45.");
     element.value = "";
     element.focus();
     return;
