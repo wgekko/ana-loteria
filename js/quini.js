@@ -118,25 +118,19 @@ checkBtnQuini.addEventListener("click", function (e) {
     carton3.innerHTML = `Carton N#3: [${quiniTres}], NO tiene aciertos `; 
     //resultado2.innerHTML = `Lo siento Ana no tienes aciertos.`;
   }
+
+
 });
 
-function validarRangoQuini(elemento){
-  var numero = parseInt(elemento.value,10);
-  //Validamos que se haya ingresado solo numeros y no cadenas de caracteres
-  if(isNaN(numero) || (!Number.isInteger(numero)) || (numero == null) ){
-    alert('Verifique datos, debe Ingresar solo números.');
-    elemento.focus();
-    elemento.select();
-    return false;
+function validarNroQuini(element) {
+  if (isNaN(element.value) || !element.value || element.value.trim()=="" || element.value < 1 || element.value > 45) {
+    alert("Por favor, ingrese un número válido entre 1 y 45.");
+    element.value = "";
+    element.focus();
+    return;
   }
-  //Validamos que se cumpla el rango entre 00 y 45
-  if(numero<00 || numero>45){
-    alert('Recuerde, sólo se permite el números entre : 00 - 45');
-    elemento.focus();
-    return false;
-  }
-  return true;
 };
+
 
 
 /*

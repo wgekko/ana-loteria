@@ -23,14 +23,14 @@
   </header>
   <main >
           <h1>Quini6</h1>
-          <p>Ana, digita los números del sorteo del Quini6 :</p>
+          <p>Ana, digita los números del sorteo del Quini6 (rango 00-45) :</p>
           <form>
-            <input class="validar" type="text" id="user-number-1"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="" >
-            <input class="validar" type="text" id="user-number-2"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
-            <input class="validar" type="text" id="user-number-3"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="" >
-            <input class="validar" type="text" id="user-number-4"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
-            <input class="validar" type="text" id="user-number-5"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
-            <input class="validar" type="text" id="user-number-6"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoQuini(this);" required="">
+            <input class="validar" type="text" id="user-number-1"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroQuini(this)" required="" >
+            <input class="validar" type="text" id="user-number-2"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroQuini(this)" required="">
+            <input class="validar" type="text" id="user-number-3"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroQuini(this)" required="" >
+            <input class="validar" type="text" id="user-number-4"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroQuini(this)" required="">
+            <input class="validar" type="text" id="user-number-5"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroQuini(this)" required="">
+            <input class="validar" type="text" id="user-number-6"  minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroQuini(this)" required="">
             <button  class="btn-modal-datos" id="check-btn-quini">Verificar aciertos</button>
           </form>  
           <section class="modal">

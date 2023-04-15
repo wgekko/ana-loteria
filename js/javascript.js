@@ -1,4 +1,4 @@
-document.querySelector(".menu").addEventListener("cli0ck", function (e) {
+document.querySelector(".menu").addEventListener("click", function (e) {
   e.preventDefault();
   window.location.href = "index.htnl";
 });

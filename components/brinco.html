@@ -23,14 +23,14 @@
   </header>
   <main >
           <h1>Brinco</h1>
-          <p>Ana, digita los números del sorteo del Brinco :</p>
-          <form>
-            <input type="text" id="user-number-1" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required="" > <!--class="validar"-->
-            <input type="text" id="user-number-2" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
-            <input type="text" id="user-number-3" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
-            <input type="text" id="user-number-4" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
-            <input type="text" id="user-number-5" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
-            <input type="text" id="user-number-6" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" onblur="return validarRangoBrinco(this);" required=""> <!--class="validar"-->
+          <p>Ana, digita los números del sorteo del Brinco (ranto 00.39):</p>
+          <form class="form_brinco">
+            <input type="text" name="dato1" id="user-number-1" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required="" > 
+            <input type="text" name="dato2" id="user-number-2" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
+            <input type="text" name="dato3" id="user-number-3" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
+            <input type="text" name="dato4" id="user-number-4" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
+            <input type="text" name="dato5" id="user-number-5" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
+            <input type="text" name="dato6" id="user-number-6" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
             <button  class="btn-modal-datos" id="check-btn-brinco">Verificar aciertos</button>
           </form>
           <section class="modal">

@@ -8,6 +8,7 @@ const resultado1 = document.getElementById("resultado1");
 const numero1 = document.getElementById("numero1");
 const carton1 = document.getElementById("cartonUno");
 const carton2 = document.getElementById("cartonDos");
+const inputs = document.querySelectorAll('#form_brinco.input')
 
 checkBtnBrinco.addEventListener("click", function (e) {
   e.preventDefault();
@@ -81,20 +82,34 @@ checkBtnBrinco.addEventListener("click", function (e) {
   }
 });
 
+
+
+function validarNroBrinco(element) {
+  if (isNaN(element.value) || !element.value || element.value.trim()=="" || element.value < 1 || element.value > 39) {
+    alert("Por favor, ingrese un número válido entre 1 y 39.");
+    element.value = "";
+    element.focus();
+    return;
+  }
+};
+/*
 function validarRangoBrinco(elemento){
   var numero = parseInt(elemento.value,10);
-  //Validamos que se haya ingresado solo numeros y no cadenas de caracteres
+ 
   if(isNaN(numero) || (!Number.isInteger(numero) || (numero === null))){
+     //Validamos que se haya ingresado solo numeros y no cadenas de caracteres
     alert('Verifique datos, debe Ingresar solo números.');
     elemento.focus();
     elemento.select();
     return false;
-  }
-  //Validamos que se cumpla el rango entre 00 y 39
-  if(numero<00 || numero>39){
+  }else if (numero<00 || numero>39){
+     //Validamos que se cumpla el rango entre 00 y 39
     alert('Recuerde, sólo se permite el números entre : 00 - 39');
     elemento.focus();
     return false;
+  }else {
+    return true;
   }
-  return true;
-};
+  
+  
+};*/
