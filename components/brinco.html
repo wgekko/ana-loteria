@@ -23,7 +23,7 @@
   </header>
   <main >
           <h1>Brinco</h1>
-          <p>Ana, digita los números del sorteo del Brinco (ranto 00.39):</p>
+          <p>Ana, digita los números del sorteo del Brinco (rango 00-39):</p>
           <form class="form_brinco">
             <input type="text" name="dato1" id="user-number-1" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required="" > 
             <input type="text" name="dato2" id="user-number-2" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
@@ -33,6 +33,10 @@
             <input type="text" name="dato6" id="user-number-6" minlenght="2" maxlength="2" pattern="[0-9]+" size="2" oninput="validarNroBrinco(this)" required=""> 
             <button  class="btn-modal-datos" id="check-btn-brinco">Verificar aciertos</button>
           </form>
+          <form>           
+            <iframe src="https://www.loteriasantafe.gov.ar/index.php/resultados/brinco"  width="1000" height="500"></iframe>
+          </form>
+
           <section class="modal">
                 <div class="modal__container"> 
                   <h4 class="modal__title">Verificación de aciertos</h4>
