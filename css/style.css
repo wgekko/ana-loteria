@@ -180,8 +180,7 @@ footer {
   position: absolute;
   /*position: fixed;*/  
   width: 100%; 
-  bottom: 0;
-  margin: auto;
+  /*bottom: 0;*/
   background-color: rgba(17, 143, 247, 0.681);
   font-style: italic;
   color: rgb(255, 255, 255);
@@ -189,15 +188,15 @@ footer {
 
 }
 
+.footer-text {
+  display:flex;
+  justify-content: flex-start; 
+  /*margin-right: 16px;*/
+}
 .redes{
   display:flex;
   justify-content: flex-end;
 }
-
-.copyrigth {
-  margin-right: 16px;
-}
-
 .imgRedes{
   border: 2px solid black;
   color: black;
